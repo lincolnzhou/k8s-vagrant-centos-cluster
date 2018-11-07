@@ -1,0 +1,17 @@
+采用vagrant+centos7来搭建k8s集群
+
+centos7镜像root默认密码为vagrant
+
+master: 172.17.8.101
+nodes: 172.17.8.102、172.17.8.103
+
+k8s: https://dl.k8s.io/v1.10.0/kubernetes-server-linux-amd64.tar.gz
+
+1. 创建TLS证书和秘钥
+在master上使用cfssl来生成
+
+vagrant plugin install vagrant-scp
+
+2. 安装kubectl以及配置文件
+
+4. 创建kubeconfig文件
